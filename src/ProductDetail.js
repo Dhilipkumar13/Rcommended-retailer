@@ -9,14 +9,14 @@ const ProductDetail = ({ products, handleDelete }) => {
   };
 
   return (
-    <div className='product-detail'>
+    <div className='edit-detail'>
       <article>
         {product ? (
           <>
             <h2>{product.name}</h2>
             <p>{product.description}</p>
             <p>Price: &#8377; {product.price}</p>
-            <button className='editButton' onClick={handleDeleteClick}>Edit</button>
+            <Link to={`/editproduct/${product.id}`} ><button className='editButton' > Edit </button> </Link>
             <button className='deleteButton' onClick={handleDeleteClick}>Delete</button>
           </>
         ) : (

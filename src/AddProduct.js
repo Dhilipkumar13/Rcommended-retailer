@@ -40,7 +40,7 @@ const AddProduct = ({
           onChange={(e) => setProductPrice(e.target.value)}
         />
 
-        <button type="submit">Add Product</button>
+        <button type="submit" >Add Product</button>
       </form>
     </div>
   );
